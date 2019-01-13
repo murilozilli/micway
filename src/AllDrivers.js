@@ -7,7 +7,7 @@ class AllDrivers extends Component {
         return (
             <div>
                 <h1>All Drivers</h1>
-                {this.props.drivers.map((driver) => <Driver key={driver.firstName} post={driver} />)}
+                {this.props.drivers.map((driver) => <Driver key={driver.firstName} driver={driver} />)}
             </div>
         );
     }
