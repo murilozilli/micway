@@ -12,7 +12,8 @@ class DriverForm extends Component {
             firstName,
             lastName,
             email,
-            dob
+            dob,
+            editing: false
         }
         this.props.dispatch({
             type:'ADD_DRIVER',
