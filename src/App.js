@@ -7,8 +7,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <DriverForm />
-                <AllDrivers />
+                <div className="navbar">
+                    <h2 className="center">Micway - Drivers</h2>
+                    <DriverForm />
+                    <AllDrivers />
+                </div>
             </div>
         );
     }

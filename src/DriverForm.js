@@ -25,9 +25,9 @@ class DriverForm extends Component {
     }
 	render() {
 		return (
-		<div>
-		  <h1>Create Driver</h1>
-		  <form onSubmit={this.handleSubmit}>
+		<div className="driver-container">
+		  <h1 className="driver_heading">Create Driver</h1>
+		  <form className="form" onSubmit={this.handleSubmit}>
 			<input required type="file" placeholder="Upload Profile Picture" /><br /><br />
 		    <input required type="text" ref={(input)=>this.getFirstName = input} placeholder="Enter First Name" /><br /><br />
 		    <input required type="text" ref={(input)=>this.getLastName = input} placeholder="Enter Last Name" /><br /><br />

@@ -19,8 +19,8 @@ class EditComponent extends Component {
     }
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleEdit}>
+            <div className="driver">
+                <form className="form" onSubmit={this.handleEdit}>
                     <input required type="text" ref={(input) => this.getFirstName = input}
                         defaultValue={this.props.driver.firstName} placeholder="Enter First Name" /><br /><br />
                     <input required type="text" ref={(input) => this.getLastName = input}
